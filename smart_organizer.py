@@ -106,6 +106,10 @@ def main():
                     print("\nRules are not saved.")
         
         elif choice == '2':
+            if not os.path.exists("config.json"):
+                print("\nError: No rules found. Please create a rule(Option 1) before organizing files.")
+                continue
+                
             target_directory = input("\nPlease enter the directory you want to sort(Only one directory): ").strip()
             if os.path.isdir(target_directory):
                 with open("config.json") as c:
