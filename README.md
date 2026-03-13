@@ -20,7 +20,7 @@ A smart and interactive Command Line Interface(CLI) tool written in Python. It h
 ### Installation
 1. Clone the repository or download the source code:
     ```bash
-   git clone [https://github.com/yourusername/Smart-File-Organizer.git](https://github.com/yourusername/Smart-File-Organizer.git)
+   git clone https://github.com/yourusername/Smart-File-Organizer.git
    cd Smart-File-Organizer
    ```
 2. Run the main script in your terminal:
