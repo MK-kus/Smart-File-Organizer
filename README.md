@@ -20,13 +20,13 @@ A smart and interactive Command Line Interface(CLI) tool written in Python. It h
 ### Installation
 1. Clone the repository or download the source code:
     ```bash
-    git clone [https://github.com/yourusername/Smart-File-Organizer.git](https://github.com/yourusername/Smart-File-Organizer.git)
+   git clone [https://github.com/yourusername/Smart-File-Organizer.git](https://github.com/yourusername/Smart-File-Organizer.git)
    cd Smart-File-Organizer
    ```
 2. Run the main script in your terminal:
-```bash
-python smart_organizer.py
-```
+   ```bash
+   python smart_organizer.py
+   ```
 ## Usage
 
 Upon running the script, there will be 4 options on the main:
