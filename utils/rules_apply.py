@@ -30,6 +30,7 @@ def file_organize(root_path: str, config: dict):
     """
 
     extension_rule_match = {}
+    
     # For all other extensions that don't appear in the config
     general_rule = []
 
@@ -69,8 +70,10 @@ def file_organize(root_path: str, config: dict):
                     # To avoid duplicate files with the same name
                     name, _ = os.path.splitext(file_name_l)
                     count = 1
+                    
                     while os.path.exists(dest_path):
                         dest_path = os.path.join(dest_dir, f"{name}_{count}{ext}")
+                        count += 1
                 
                     if os.path.abspath(full_path) != os.path.abspath(dest_path):
                         shutil.move(full_path, dest_path)
