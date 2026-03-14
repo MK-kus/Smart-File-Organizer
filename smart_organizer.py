@@ -75,6 +75,10 @@ def main():
 
                 destination_directory = input("\nPlease name the folder that the sorted files will be allocated(Only type one): ").strip()
 
+                if destination_directory == 'q':
+                    quit = True
+                    break
+                
                 single_rule = {
                     "Extensions": file_type,
                     "File_Keyword": file_keyword,
