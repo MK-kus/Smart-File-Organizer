@@ -113,8 +113,10 @@ def main():
             if not os.path.exists("config.json"):
                 print("\nError: No rules found. Please create a rule(Option 1) before organizing files.")
                 continue
-                
-            target_directory = input("\nPlease enter the directory you want to sort(Only one directory): ").strip()
+            
+            raw_input = input("\nPlease enter the directory you want to sort(Only one directory): ")
+            target_directory = raw_input.strip().strip("'").strip('"').replace('\\ ', ' ')
+            
             if os.path.isdir(target_directory):
                 with open("config.json") as c:
                      config = json.load(c)
